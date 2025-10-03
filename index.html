@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Coal Dealers</title>
+    <meta name="description" content="Coal Dealers is a fair, community-first Minecraft SMP. Cosmetics-only donations. No pay-to-win.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+  </head>
+ 
+  <body data-bg="assets/bg-home.gif">
+    <nav>
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Coal Dealers home">
+          <img src="assets/logo.png" alt="Coal Dealers logo">
+          <div>
+            <div class="title">Coal Dealers SMP</div>
+            <div class="subtitle">coaldealers.uk</div>
+          </div>
+        </a>
+        <div class="spacer"></div>
+        <div class="nav-actions">
+          <a class="btn primary" href="shop.html"><i class="fa-solid fa-store"></i><span>Shop</span></a>
+          <a class="btn outline" href="vote.html"><i class="fa-solid fa-square-poll-vertical"></i><span>Vote</span></a>
+          <a class="btn" href="https://discord.gg/aeupvgfMn3" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <section>
+          <div class="kicker"><i class="fa-solid fa-leaf"></i> Community-first SMP</div>
+          <h1>Fair play. Cosmetics-only perks. No pay-to-win.</h1>
+          <p class="lead">
+            Coal Dealers runs on community donations. Donators unlock unique cosmetics and flair —
+            never gameplay advantages. Moderators keep cheaters out so everyone plays on level ground.
+          </p>
+          <div class="ip-card" role="region" aria-label="Server IP">
+            <div class="ip"><i class="fa-solid fa-server"></i><span>coaldealers.uk</span></div>
+            <button class="copy-btn" data-copy-ip="coaldealers.uk" type="button">
+              <i class="fa-regular fa-copy"></i><span>Copy</span>
+            </button>
+          </div>
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="shop.html"><i class="fa-solid fa-hand-holding-heart"></i><span>Support the server</span></a>
+            <a class="btn outline" href="vote.html"><i class="fa-solid fa-square-poll-vertical"></i><span>Vote to boost us</span></a>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card">
+            <h3><i class="fa-solid fa-circle-check"></i> Play fair promise</h3>
+            <p>Equal rights for all players. Zero pay-to-win. Moderators actively ban cheaters to protect the community.</p>
+          </div>
+          <div class="card" style="margin-top:12px;">
+            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Donator cosmetics</h3>
+            <p>Show love for the server and express yourself with cosmetic-only perks that don’t affect gameplay.</p>
+          </div>
+          <div class="card" style="margin-top:12px;">
+            <h3><i class="fa-solid fa-people-group"></i> Built by the community</h3>
+            <p>We grow through your votes and support. Every bit of help keeps the world online and thriving.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="grid">
+          <div class="card">
+            <h3><i class="fa-solid fa-shield-heart"></i> Safe Guarding</h3>
+            <p>Our team watches for exploits, x-ray, and hacked clients. Cheaters are banned quickly to keep play fair.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-palette"></i> Theme </h3>
+            <p>Donators will be able to change their usernames theme both in discord and Minecraft server.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-seedling"></i> Transparent support</h3>
+            <p>Donations keep the server running. Perks are cosmetic-only — never power or progression.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Coal Dealers. Community-first SMP.</div>
+        <div class="social">
+          <a class="btn" href="https://discord.gg/aeupvgfMn3" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

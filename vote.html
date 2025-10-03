@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vote — Coal Dealers SMP</title>
+    <meta name="description" content="Vote for Coal Dealers on listing sites. Planet Minecraft plus more coming soon.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-bg="assets/bg-vote.jpg">
+    <nav>
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Coal Dealers logo">
+          <div>
+            <div class="title">Coal Dealers SMP</div>
+            <div class="subtitle">coaldealers.uk</div>
+          </div>
+        </a>
+        <div class="spacer"></div>
+        <div class="nav-actions">
+          <a class="btn primary" href="shop.html"><i class="fa-solid fa-store"></i><span>Shop</span></a>
+          <a class="btn outline" href="vote.html"><i class="fa-solid fa-square-poll-vertical"></i><span>Vote</span></a>
+          <a class="btn" href="https://discord.gg/aeupvgfMn3" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="section-inner">
+        <div class="badge" style="margin-bottom:14px;">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Voting helps new players discover the server</span>
+        </div>
+        <h1>Vote for Coal Dealers</h1>
+        <p class="lead">
+          We’re listed on top Minecraft sites. Click a site below to vote. It takes a few seconds and helps our community grow.
+        </p>
+
+        <div id="vote-list" class="vote-list" style="margin-top:18px;">
+          </div>
+
+        <div class="card" style="margin-top:18px;">
+          <h3><i class="fa-solid fa-wrench"></i> How Voting Helps Us</h3>
+          <p>We are listed on Minecraft server list websites that use a vote-based ranking system. More votes make our server more visible to new people.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Coal Dealers.</div>
+        <div class="social">
+          <a class="btn" href="https://discord.gg/aeupvgfMn3" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // IMPORTANT: Define the list of sites where your server is ACTUALLY registered.
+      window.VOTE_SITES = [
+        { 
+          name: 'Planet Minecraft', 
+          // FIXME: REPLACE THIS URL with your actual Planet Minecraft server page link!
+          url: 'https://www.planetminecraft.com/server/REPLACE-WITH-YOUR-SERVER-LINK/', 
+          desc: 'Vote daily to support us on PMC.' 
+        },
+        // { name: 'Minecraft Server List', url: 'YOUR_URL_HERE' }, // Example: Add more sites here when you register on them.
+        // { name: 'TopG', url: 'YOUR_URL_HERE' },
+      ];
+     
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.CoalDealers && window.CoalDealers.renderVoteSites) {
+          CoalDealers.renderVoteSites(window.VOTE_SITES);
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Events — Coal Dealers SMP</title>
     <meta name="description" content="Community events for the Coal Dealers Minecraft SMP. Join us for build contests, mini-games, and more.">
+
+    <!-- AUTO-CHANGING FAVICON (controlled by main.js) -->
+    <link id="dynamic-favicon" rel="icon" type="image/png" sizes="32x32" href="assets/normal/favicon-32x32.png">
+    <link rel="shortcut icon" href="assets/normal/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/normal/apple-touch-icon.png">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
+
   <body data-bg="assets/bg-vote.jpg">
     <nav>
       <div class="nav-inner">
@@ -31,27 +38,19 @@
 
     <main class="section">
       <div class="section-inner">
-        <!-- Upcoming Events -->
         <div class="badge" style="margin-bottom:14px;">
           <i class="fa-solid fa-star"></i>
           <span>Join us for our next community event!</span>
         </div>
         <h1>Upcoming Events</h1>
-        <div id="upcoming-events-container">
-          <!-- Upcoming events will be dynamically inserted here by JavaScript -->
-        </div>
+        <div id="upcoming-events-container"></div>
 
-        <!-- Past Events Timeline -->
         <h1 style="margin-top: 60px;">Event Timeline</h1>
         <p class="lead">A look back at our server's history. Click an icon to see details about a past event.</p>
         <div class="timeline-container">
-            <div class="timeline" id="timeline">
-                <!-- Past event timeline icons will be inserted here by JavaScript -->
-            </div>
+          <div class="timeline" id="timeline"></div>
         </div>
-        <div id="selected-past-event-container" class="selected-event-view">
-            <!-- Details for the selected past event will be shown here -->
-        </div>
+        <div id="selected-past-event-container" class="selected-event-view"></div>
       </div>
     </main>
 
@@ -63,7 +62,9 @@
         </div>
       </div>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
-

@@ -217,12 +217,9 @@ nav {
 
 /* Footer */
 footer {
-  position: relative;
-  z-index: 1;
   border-top: 1px solid var(--card-border);
   background: rgba(0,0,0,0.4);
 }
-
 footer .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -234,12 +231,10 @@ footer .footer-inner {
   font-size: 0.9rem;
   gap: 14px;
 }
-
 footer .social {
   display: flex;
   gap: 10px;
 }
-
 
 /* Vote list */
 .vote-list {
@@ -340,4 +335,3 @@ footer .social {
   background: rgba(255,255,255,0.05);
 }
 .badge i { font-size: 0.95rem; }
-

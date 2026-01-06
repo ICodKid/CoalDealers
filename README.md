@@ -1,6 +1,6 @@
 # 🌌 About the Website (✧ω✧)
 
-This is the **official website** for **Coal Dealers SMP** 🎮 — a Minecraft server built around **fair play** 🌱, **cosmetic-only perks** 🎨, and **no pay-to-win** 🚫💰.  
+This is the **official website** for **Coal Dealers SMP** 🎮  a Minecraft server built around **fair play** 🌱, **cosmetic only perks** 🎨, and **no pay to win** 🚫💰.  
 
 The site was created to give players:  
 ✨ Info about the server (ﾉ´ヮ`)ﾉ*:･ﾟ✧  
@@ -8,4 +8,4 @@ The site was created to give players:
 ✨ Voting links to support us ⊂(◉‿◉)つ  
 ✨ Event details and community updates (≧▽≦)  
 
-It’s simple, clean, and community-first 💖.  
+It’s simple, clean, and community first 💖.  

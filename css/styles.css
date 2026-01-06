@@ -21,15 +21,6 @@ body {
   background: var(--bg) no-repeat center/cover fixed;
   position: relative;
   line-height: 1.5;
-
-  /* FIX → prevent large empty space under footer */
-  display: flex;
-  flex-direction: column;
-}
-
-/* FIX → allow main content to expand correctly */
-main.section {
-  flex: 1;
 }
 
 /* Background gradient overlay */
@@ -343,5 +334,4 @@ footer .social {
   border: 1px solid var(--card-border);
   background: rgba(255,255,255,0.05);
 }
-
 .badge i { font-size: 0.95rem; }
